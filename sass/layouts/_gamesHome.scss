@@ -1,0 +1,23 @@
+#full_games_home{
+    padding: 180px 0 100px 0;
+    background-color: #0b001b;
+
+    .main_games_home{
+
+        .home_games_title{
+            padding-bottom: 60px;
+        }
+        
+        .home_game_pic{
+            padding: 0px;
+
+            .home_games_pic_box{
+                position: relative;
+
+                &:hover .games_pic_box_overlay{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

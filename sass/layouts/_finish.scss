@@ -1,0 +1,30 @@
+#full_finish{
+    padding: 20px 0;
+    background-color: #0b001b;
+    position: relative;
+    border: 2px solid #000000;
+
+    &::before{
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        top: 2px;
+        left: 0px;
+        background: rgb(2,0,36);
+        background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(87,13,200,1) 0%, rgba(158,78,252,1) 100%); 
+    }
+
+    .main_finish{
+        text-align: center;
+
+
+        .finish_p{
+            p{
+                font-family: $font_nunito;
+                font-size: 16px;
+                color: #ffffff;
+            }
+        }
+    }
+}

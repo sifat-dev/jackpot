@@ -1,0 +1,699 @@
+/*=======================================
+        fonts css start
+=========================================*/
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+/*=======================================
+        common css start
+=========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+body {
+  overflow-x: hidden; }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0; }
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none; }
+
+.btn-link:hover {
+  text-decoration: none; }
+
+/*=======================================
+        mixin css start
+=========================================*/
+/*=======================================
+        varriable css start
+=========================================*/
+/*=======================================
+        Component css start
+=========================================*/
+.normal_btn {
+  padding: 15px 30px;
+  background: #020024;
+  background: linear-gradient(to top, #020024 0%, #570dc8 0%, #9e4efc 100%);
+  border-style: none;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 2px 6px 1px #5813b8;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 0px 0px #3a0090;
+  box-shadow: 0px 6px 0px 0px #3a0090; }
+  .normal_btn:first-child {
+    margin-right: 20px; }
+
+.normal_btn:hover {
+  padding: 15px 30px;
+  background: #020024;
+  background: linear-gradient(to top, #020024 0%, #a60084 0%, #ff39dc 100%);
+  border-style: none;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 2px 6px 1px #A60084;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 0px 0px #661355;
+  box-shadow: 0px 6px 0px 0px #661355; }
+
+/*===============================================================
+                section title
+=================================================================*/
+.section_title h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 48px;
+  background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px #4d0148);
+  color: #fcb100; }
+.section_title h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  filter: drop-shadow(0 0 20px #1f004f);
+  color: #ffffff;
+  padding-top: 15px; }
+
+.add_border {
+  border: 1px solid #fcb100; }
+
+.accordion .add_border:not(:first-of-type):not(:last-of-type) {
+  border-bottom: 1px solid #fcb100; }
+
+.accordion .card:not(:first-of-type):not(:last-of-type) {
+  border-bottom: 0;
+  border-radius: 0; }
+
+/*==================================================================
+                    page heading box
+====================================================================*/
+.banner_home_all_box {
+  position: absolute;
+  top: 130%;
+  width: 100%;
+  left: 0;
+  -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%);
+  clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%); }
+  .banner_home_all_box .banner_home_box {
+    background: #020024;
+    background: linear-gradient(55deg, #020024 0%, #9e4efc 0%, #570dc8 85%, #570dc8 100%);
+    -webkit-box-shadow: 0px 6px 0px 0px #7220ec;
+    box-shadow: 0px 6px 0px 0px #7220ec; }
+    .banner_home_all_box .banner_home_box .banner_home_box_cont {
+      padding: 30px 40px;
+      -webkit-box-shadow: 12px 28px 50px 10px #1f0743;
+      -moz-box-shadow: 12px 28px 50px 10px #1f0743;
+      box-shadow: 12px 28px 50px 10px #1f0743; }
+      .banner_home_all_box .banner_home_box .banner_home_box_cont h1 {
+        font-family: "Anton", sans-serif;
+        font-size: 50px;
+        background: linear-gradient(to top, #fdb125 0%, #e07e1e 48%, #fcb100 52%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #4d0148;
+        filter: drop-shadow(0px 4px 0px rgba(17, 0, 16, 0.4));
+        color: #fcb100;
+        padding-bottom: 20px; }
+      .banner_home_all_box .banner_home_box .banner_home_box_cont h2 {
+        color: #ffffff;
+        font-family: "Anton", sans-serif;
+        font-size: 32px;
+        filter: drop-shadow(0px 4px 0px rgba(17, 0, 16, 0.4));
+        padding-bottom: 15px; }
+      .banner_home_all_box .banner_home_box .banner_home_box_cont p {
+        color: #ffffff;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px; }
+
+/*========================================================
+                games img overlay
+==========================================================*/
+.games_pic_box_overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #150035c2;
+  opacity: 0;
+  transition: all linear .4s;
+  -webkit-transition: all linear .4s;
+  -moz-transition: all linear .4s;
+  -o-transition: all linear .4s;
+  -ms-transition: all linear .4s; }
+  .games_pic_box_overlay .games_overlay_con {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50%;
+    transform: translateY(-50%); }
+    .games_pic_box_overlay .games_overlay_con h2 {
+      color: white;
+      font-family: "Anton", sans-serif;
+      font-size: 24px;
+      padding-bottom: 50px; }
+
+/*=======================================
+        nav part css start
+=========================================*/
+nav {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
+  nav a img {
+    height: 98px; }
+  nav ul li a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    line-height: 70px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    padding: 0 15px !important; }
+    nav ul li a:hover {
+      color: #ff39dc; }
+  nav ul li.active a {
+    color: #ff39dc; }
+  nav ul .nav_button {
+    margin-top: 10px;
+    margin-left: 45px; }
+
+/*=======================================
+        nav part css end
+=========================================*/
+/*=======================================
+        bannner part of home page css start
+=========================================*/
+#full_banner_home_page {
+  padding: 250px 0 285px 0;
+  position: relative;
+  background-color: #150035; }
+  #full_banner_home_page .main_banner_part {
+    position: relative; }
+  #full_banner_home_page .main_banner_home_page .home_banner_img img {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+    height: 600px; }
+  #full_banner_home_page .main_banner_home_page .banner_home_content p {
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px; }
+    #full_banner_home_page .main_banner_home_page .banner_home_content p.second_p_banner {
+      text-align: center;
+      margin-top: -20px;
+      margin-bottom: 30px; }
+  #full_banner_home_page .main_banner_home_page .banner_home_content h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 331px;
+    background: linear-gradient(to top, #fdb125 0%, #e07e1e 48%, #fcb100 52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #4d0148;
+    filter: drop-shadow(0 0 35px #4d0148);
+    color: #fcb100;
+    margin-top: -35px; }
+
+/*=======================================
+        bannner part of home page css end
+=========================================*/
+/*=======================================
+        games part of home page css start
+=========================================*/
+#full_games_home {
+  padding: 180px 0 100px 0;
+  background-color: #0b001b; }
+  #full_games_home .main_games_home .home_games_title {
+    padding-bottom: 60px; }
+  #full_games_home .main_games_home .home_game_pic {
+    padding: 0px; }
+    #full_games_home .main_games_home .home_game_pic .home_games_pic_box {
+      position: relative; }
+      #full_games_home .main_games_home .home_game_pic .home_games_pic_box:hover .games_pic_box_overlay {
+        opacity: 1; }
+
+/*=======================================
+        games part of home page css end
+=========================================*/
+/*=======================================
+        unclock part of home page css start
+=========================================*/
+#full_unlock_home {
+  padding: 80px 0;
+  background-color: #150035; }
+  #full_unlock_home .main_unlock_home .section_title {
+    padding-top: 80px; }
+  #full_unlock_home .main_unlock_home .unlock_con p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 68px;
+    padding-bottom: 63px; }
+
+/*=======================================
+        unlock part of home page css end
+=========================================*/
+/*=======================================
+        pricing part of home page css start
+=========================================*/
+#full_pricing_home {
+  padding: 100px 0;
+  background-color: #0b001b; }
+  #full_pricing_home .main_pricing_home .section_title {
+    padding-bottom: 13px; }
+
+.all_pricing_con {
+  position: relative; }
+  .all_pricing_con .pricing_con_hover {
+    text-align: center;
+    padding: 20px;
+    background: #020024;
+    background: linear-gradient(to top, #020024 0%, #a60084 0%, #ff39dc 100%);
+    border-radius: 5px 5px 0 0;
+    -webkit-box-shadow: 0px 6px 0px 0px #661355;
+    box-shadow: 0px 6px 0px 0px #661355;
+    z-index: 99;
+    position: relative;
+    opacity: 0;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    margin-top: -15px; }
+    .all_pricing_con .pricing_con_hover h3 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #ffffff;
+      text-shadow: 2px 4px 1px #661355; }
+  .all_pricing_con .pricing_con {
+    padding: 60px 0;
+    background: #020024;
+    background: linear-gradient(to bottom, #020024 0%, #9e4efc 0%, #570dc8 100%);
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    top: -3px; }
+    .all_pricing_con .pricing_con h2 {
+      font-family: "Anton", sans-serif;
+      font-size: 32px;
+      color: #ffffff; }
+    .all_pricing_con .pricing_con h3 {
+      font-family: "Nunito", sans-serif;
+      font-weight: 800;
+      font-size: 50px;
+      color: #ffffff; }
+    .all_pricing_con .pricing_con p {
+      font-family: "Nunito", sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      padding-bottom: 30px; }
+    .all_pricing_con .pricing_con ul {
+      border-top: 1px solid #6428b4; }
+      .all_pricing_con .pricing_con ul li {
+        color: #ffffff;
+        line-height: 40px; }
+    .all_pricing_con .pricing_con button {
+      position: absolute;
+      top: 93%;
+      left: 50%;
+      transform: translateX(-50%); }
+    .all_pricing_con .pricing_con:hover button {
+      padding: 15px 30px;
+      background: #020024;
+      background: linear-gradient(to top, #020024 0%, #a60084 0%, #ff39dc 100%);
+      border-style: none;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ffffff;
+      text-shadow: 2px 6px 1px #A60084;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 6px 0px 0px #661355;
+      box-shadow: 0px 6px 0px 0px #661355; }
+  .all_pricing_con:hover .pricing_con_hover {
+    opacity: 1;
+    margin-top: 15px; }
+
+/*=======================================
+        pricing part of home page css end
+=========================================*/
+/*=======================================
+        tournament part of home page css start
+=========================================*/
+#full_tournament_home {
+  padding: 100px 0;
+  background-color: #150035; }
+  #full_tournament_home .main_tournament_home .section_title h1 {
+    font-size: 40px;
+    position: relative; }
+    #full_tournament_home .main_tournament_home .section_title h1::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: -30px;
+      width: 100%;
+      height: 3px;
+      color: #fcb100;
+      background: linear-gradient(to bottom, #000000 67%, #290a59 67%); }
+  #full_tournament_home .main_tournament_home .asking_con {
+    margin-top: 65px; }
+    #full_tournament_home .main_tournament_home .asking_con .card {
+      background: transparent;
+      margin-bottom: 10px; }
+      #full_tournament_home .main_tournament_home .asking_con .card .card-header {
+        position: relative; }
+        #full_tournament_home .main_tournament_home .asking_con .card .card-header span {
+          color: #fffeff;
+          font-size: 20px;
+          font-weight: 400;
+          font-family: "Nunito", sans-serif; }
+        #full_tournament_home .main_tournament_home .asking_con .card .card-header i {
+          position: absolute;
+          color: #fffeff;
+          top: 50%;
+          right: 50px;
+          transform: translateY(-50%); }
+      #full_tournament_home .main_tournament_home .asking_con .card .collapse .card-body p {
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        color: #fffeff; }
+
+/*=======================================
+        tournament part of home page css end
+=========================================*/
+/*=======================================
+        payment part of home page css start
+=========================================*/
+#full_payment_home {
+  padding: 30px 0;
+  background: #020024;
+  background: linear-gradient(to top, #020024 0%, #570dc8 0%, #9e4efc 100%);
+  -webkit-box-shadow: 0px 6px 0px 0px #3a0090;
+  box-shadow: 0px 6px 0px 0px #3a0090; }
+  #full_payment_home .main_payment_home h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 2px 6px 1px #5813b8; }
+  #full_payment_home .main_payment_home .subscribe_area .input-group {
+    padding-top: 20px; }
+    #full_payment_home .main_payment_home .subscribe_area .input-group input {
+      font-family: "Nunito", sans-serif;
+      font-size: 14px;
+      color: black;
+      background-color: transparent;
+      border-color: #000000; }
+      #full_payment_home .main_payment_home .subscribe_area .input-group input:focus {
+        box-shadow: none; }
+    #full_payment_home .main_payment_home .subscribe_area .input-group .input-group-append .input-group-text {
+      background-color: transparent;
+      border-color: #000000; }
+      #full_payment_home .main_payment_home .subscribe_area .input-group .input-group-append .input-group-text i {
+        color: #000000; }
+  #full_payment_home .main_payment_home .payment_area .all_payment_img {
+    padding-top: 15px; }
+    #full_payment_home .main_payment_home .payment_area .all_payment_img a {
+      padding-right: 15px; }
+
+/*=======================================
+        payment part of home page css end
+=========================================*/
+/*=======================================
+        footer part css start
+=========================================*/
+#full_footer {
+  padding: 60px 0;
+  background-color: #0b001b; }
+  #full_footer .main_footer h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+    padding-bottom: 34px; }
+  #full_footer .main_footer .footer_about p {
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    color: #ffffff; }
+  #full_footer .main_footer .footer_about .footer_social_btn {
+    height: 53px;
+    width: 50px;
+    background: #020024;
+    background: linear-gradient(to top, #020024 0%, #570dc8 0%, #9e4efc 100%);
+    border-style: none;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 6px 1px #5813b8;
+    -webkit-box-shadow: 0px 6px 0px 0px #3a0090;
+    box-shadow: 0px 6px 0px 0px #3a0090;
+    margin-top: 20px;
+    margin-right: 15px; }
+    #full_footer .main_footer .footer_about .footer_social_btn a i {
+      color: #ffffff; }
+    #full_footer .main_footer .footer_about .footer_social_btn:hover {
+      background: #020024;
+      background: linear-gradient(to top, #020024 0%, #a60084 0%, #ff39dc 100%);
+      text-shadow: 2px 6px 1px #A60084;
+      -webkit-box-shadow: 0px 6px 0px 0px #661355;
+      box-shadow: 0px 6px 0px 0px #661355; }
+  #full_footer .main_footer .footer_links ol li a {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 16px; }
+  #full_footer .main_footer .footer_security .all_security .security_con:first-child {
+    padding-bottom: 29px; }
+  #full_footer .main_footer .footer_security .all_security p {
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 30px; }
+    #full_footer .main_footer .footer_security .all_security p span {
+      display: block; }
+
+/*=======================================
+        footer part css end
+=========================================*/
+/*=======================================
+        finish part css start
+=========================================*/
+#full_finish {
+  padding: 20px 0;
+  background-color: #0b001b;
+  position: relative;
+  border: 2px solid #000000; }
+  #full_finish::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    top: 2px;
+    left: 0px;
+    background: #020024;
+    background: linear-gradient(to top, #020024 0%, #570dc8 0%, #9e4efc 100%); }
+  #full_finish .main_finish {
+    text-align: center; }
+    #full_finish .main_finish .finish_p p {
+      font-family: "Nunito", sans-serif;
+      font-size: 16px;
+      color: #ffffff; }
+
+/*=======================================
+        finish part css end
+=========================================*/
+/*=================================================
+        start css of about page
+====================================================*/
+#full_page_heading {
+  padding: 220px 0;
+  background-color: #150035;
+  position: relative; }
+  #full_page_heading .main_page_heading .all_heading {
+    text-align: center; }
+  #full_page_heading .main_page_heading .page_heading_box .banner_home_all_box {
+    top: 110px;
+    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%);
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%); }
+
+#full_about_about {
+  padding: 200px 0 60px 0;
+  background-color: #0b001b; }
+  #full_about_about .main_about_about .about_all p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 80px 0 60px 0; }
+  #full_about_about .main_about_about .about_all button {
+    margin-right: 40px; }
+  #full_about_about .main_about_about .about_all i {
+    color: #ffffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    line-height: 50px;
+    text-align: center;
+    background: #020024;
+    background: linear-gradient(to top, #020024 0%, #a60084 0%, #ff39dc 100%); }
+  #full_about_about .main_about_about .about_all h4 {
+    font-family: "Nunito", sans-serif;
+    color: #a60084;
+    font-size: 16px;
+    display: inline; }
+
+#full_games_about {
+  padding: 100px 0;
+  background-color: #150035; }
+  #full_games_about .main_games_about .section_title {
+    padding-bottom: 60px; }
+  #full_games_about .main_games_about .all_games_slider ul {
+    margin-top: 30px;
+    text-align: center; }
+    #full_games_about .main_games_about .all_games_slider ul li {
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: #020024;
+      background: linear-gradient(to top, #020024 0%, #570dc8 0%, #9e4efc 100%);
+      cursor: pointer; }
+      #full_games_about .main_games_about .all_games_slider ul li.slick-active {
+        background: #020024;
+        background: linear-gradient(to top, #020024 0%, #a60084 0%, #ff39dc 100%); }
+      #full_games_about .main_games_about .all_games_slider ul li button {
+        display: none; }
+  #full_games_about .main_games_about .all_games_slider .games_img_about {
+    position: relative; }
+    #full_games_about .main_games_about .all_games_slider .games_img_about:hover .games_pic_box_overlay {
+      opacity: 1; }
+
+/*====================================================
+        end css of about page
+======================================================*/
+/*=================================================
+        start css of games page
+====================================================*/
+#full_games_games {
+  padding: 190px 0 100px 0;
+  background-color: #0b001b; }
+  #full_games_games .main_games_games .games_img_about {
+    margin-top: 30px;
+    position: relative; }
+    #full_games_games .main_games_games .games_img_about:hover .games_pic_box_overlay {
+      opacity: 1; }
+
+/*====================================================
+        end css of games page
+======================================================*/
+/*=================================================
+        start css of membership page
+====================================================*/
+#full_membership_plan {
+  padding: 180px 0 100px 0;
+  background-color: #0b001b; }
+  #full_membership_plan .all_pricing_con {
+    margin-top: 40px; }
+
+/*====================================================
+        end css of membership page
+======================================================*/
+/*=================================================
+        start css of contact page
+====================================================*/
+#full_contact {
+  padding: 180px 0 100px 0;
+  background: url(../images/contactbg.jpg); }
+  #full_contact .main_contact .contact_con {
+    display: flex; }
+    #full_contact .main_contact .contact_con button {
+      height: 100px;
+      width: 100px;
+      background: #020024;
+      background: linear-gradient(to top, #020024 0%, #570dc8 0%, #9e4efc 100%);
+      border-style: none;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      color: #ffffff;
+      text-shadow: 2px 6px 1px #5813b8;
+      -webkit-box-shadow: 0px 6px 0px 0px #3a0090;
+      box-shadow: 0px 6px 0px 0px #3a0090;
+      margin-top: 20px;
+      margin-right: 15px;
+      margin-top: -10px; }
+      #full_contact .main_contact .contact_con button:hover {
+        background: #020024;
+        background: linear-gradient(to top, #020024 0%, #a60084 0%, #ff39dc 100%);
+        text-shadow: 2px 6px 1px #A60084;
+        -webkit-box-shadow: 0px 6px 0px 0px #661355;
+        box-shadow: 0px 6px 0px 0px #661355; }
+    #full_contact .main_contact .contact_con .contant_txt h4 {
+      color: #ffffff;
+      font-family: "Anton", sans-serif;
+      font-size: 24px; }
+    #full_contact .main_contact .contact_con .contant_txt p {
+      color: #ffffff;
+      font-size: 20px;
+      font-family: "Nunito", sans-serif; }
+      #full_contact .main_contact .contact_con .contant_txt p span {
+        display: block; }
+
+/*====================================================
+        end css of contact page
+======================================================*/
+/*=================================================
+        start css of error page
+====================================================*/
+#error_page_nav {
+  background-color: #0b001b;
+  position: static !important; }
+
+#full_error {
+  padding: 100px 0;
+  background-color: #150035; }
+  #full_error .error_btn {
+    margin-top: 60px; }
+
+/*====================================================
+        end css of error page
+======================================================*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,66 @@
+#full_tournament_home{
+    padding: 100px 0;
+    background-color: #150035;
+
+    .main_tournament_home{
+        .section_title{
+            h1{
+                font-size: 40px;
+                position: relative;
+
+                &::before{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -30px;
+                    width: 100%;
+                    height: 3px;
+                    color:#fcb100;
+                    background: linear-gradient(to bottom, #000000 67%, #290a59 67%);
+                }
+            }
+        }
+
+        .asking_con{
+
+            margin-top: 65px;
+
+            .card{
+                
+                background: transparent;
+                margin-bottom: 10px;
+
+                .card-header{
+
+                    position: relative;
+
+                    span{
+                        color:#fffeff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-family: $font_nunito;
+                    }
+
+                    i{
+                        position: absolute;
+                        color:#fffeff;
+                        top: 50%;
+                        right: 50px;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                .collapse{
+                    .card-body{
+                        p{
+                            font-family: $font_nunito;
+                            font-size: 16px;
+                            color: #fffeff;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

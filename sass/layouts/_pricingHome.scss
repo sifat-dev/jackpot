@@ -1,0 +1,106 @@
+#full_pricing_home{
+    padding: 100px 0;
+    background-color: #0b001b;
+
+    .main_pricing_home{
+
+        .section_title{
+            padding-bottom: 13px;
+        }
+    }
+}
+
+.all_pricing_con{
+
+    position: relative;
+
+    .pricing_con_hover{
+
+        text-align: center;
+        padding: 20px;
+        background: rgb(2,0,36);
+        background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(166,0,132,1) 0%, rgba(255,57,220,1) 100%); 
+        border-radius: 5px 5px 0 0;
+        -webkit-box-shadow: 0px 6px 0px 0px #661355; 
+        box-shadow: 0px 6px 0px 0px #661355;
+        z-index: 99;
+        position: relative;
+        opacity: 0;
+        @include tran;
+        margin-top: -15px;
+
+        h3{
+            font-family: $font_nunito;
+            font-weight: 600;
+            font-size: 20px;
+            color: #ffffff;
+            text-shadow: 2px 4px 1px #661355;
+        }
+    }
+
+    .pricing_con{
+        padding: 60px 0;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(to bottom, rgba(2, 0, 36, 1) 0%, rgba(158, 78, 252, 1) 0%, rgba(87, 13, 200, 1) 100%);
+        text-align: center;
+        border-radius: 5px;
+        position: relative;
+        top: -3px;
+
+        h2{
+            font-family: $font_anton;
+            font-size: 32px;
+            color: #ffffff;
+        }
+
+        h3{
+            font-family: $font_nunito;
+            font-weight: 800;
+            font-size: 50px;
+            color: #ffffff;
+        }
+
+        p{
+            font-family: $font_nunito;
+            font-size: 14px;
+            color: #ffffff;
+            padding-bottom: 30px;
+        }
+
+        ul{
+            border-top: 1px solid #6428b4;
+
+            li{
+                color: #ffffff;
+                line-height: 40px;
+            }
+        }
+
+        button{
+            position: absolute;
+            top: 93%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover button{
+            padding: 15px 30px;
+            background: rgb(2,0,36);
+            background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(166,0,132,1) 0%, rgba(255,57,220,1) 100%); 
+            border-style: none;
+            font-family: $font_anton;
+            font-weight: 400;
+            font-size: 20px;
+            color: #ffffff;
+            text-shadow: 2px 6px 1px #A60084;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 6px 0px 0px #661355; 
+            box-shadow: 0px 6px 0px 0px #661355;
+        }
+    }
+
+    &:hover .pricing_con_hover{
+        opacity: 1;
+        margin-top: 15px;
+    }
+}

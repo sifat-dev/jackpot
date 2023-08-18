@@ -1,0 +1,108 @@
+#full_page_heading {
+    padding: 220px 0;
+    background-color: #150035;
+    position: relative;
+
+    .main_page_heading {
+        .all_heading {
+            text-align: center;
+        }
+
+        .page_heading_box {
+
+            .banner_home_all_box {
+                top: 110px;
+                -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%);
+                clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%);
+            }
+        }
+    }
+}
+
+#full_about_about {
+    padding: 200px 0 60px 0;
+    background-color: #0b001b;
+
+    .main_about_about {
+        .about_all {
+            p {
+                font-family: $font_nunito;
+                font-size: 16px;
+                color: #ffffff;
+                padding: 80px 0 60px 0;
+            }
+
+            button {
+                margin-right: 40px;
+            }
+
+            i {
+                color: #ffffff;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                margin-right: 15px;
+                line-height: 50px;
+                text-align: center;
+                background: rgb(2, 0, 36);
+                background: linear-gradient(to top, rgba(2, 0, 36, 1) 0%, rgba(166, 0, 132, 1) 0%, rgba(255, 57, 220, 1) 100%);
+            }
+
+            h4 {
+                font-family: $font_nunito;
+                color: #a60084;
+                font-size: 16px;
+                display: inline;
+            }
+        }
+    }
+
+}
+
+#full_games_about {
+    padding: 100px 0;
+    background-color: #150035;
+
+    .main_games_about {
+        .section_title {
+            padding-bottom: 60px;
+        }
+
+        .all_games_slider {
+
+            ul{
+
+                margin-top: 30px;
+                text-align: center;
+
+                li{
+                    display: inline-block;
+                    height: 15px;
+                    width: 15px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    background: rgb(2,0,36);
+                    background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(87,13,200,1) 0%, rgba(158,78,252,1) 100%); 
+                    cursor: pointer;
+
+                    &.slick-active{
+                    background: rgb(2,0,36);
+                    background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(166,0,132,1) 0%, rgba(255,57,220,1) 100%);
+                    }
+
+                    button{
+                        display: none;
+                    }
+                }
+            }
+
+            .games_img_about {
+                position: relative;
+
+                &:hover .games_pic_box_overlay {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

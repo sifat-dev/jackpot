@@ -1,0 +1,147 @@
+.normal_btn{
+    padding: 15px 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(87,13,200,1) 0%, rgba(158,78,252,1) 100%); 
+    border-style: none;
+    font-family: $font_anton;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 6px 1px #5813b8;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 6px 0px 0px #3a0090; 
+    box-shadow: 0px 6px 0px 0px #3a0090;
+    &:first-child{
+        margin-right: 20px;
+    }
+}
+.normal_btn:hover{
+    padding: 15px 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(to top, rgba(2,0,36,1) 0%, rgba(166,0,132,1) 0%, rgba(255,57,220,1) 100%);
+    border-style: none;
+    font-family: $font_anton;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 6px 1px #A60084;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 6px 0px 0px #661355; 
+    box-shadow: 0px 6px 0px 0px #661355;
+}
+/*===============================================================
+                section title
+=================================================================*/
+.section_title{
+    h1{
+        font-family: $font_anton;
+        font-size: 48px;
+        background: -webkit-linear-gradient(bottom, #fdb125 0%, #e07e1e 51%, #fcb100 54%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 20px #4d0148);
+        color: #fcb100;
+    }
+    h2{
+        font-family: $font_anton;
+        font-size: 24px;
+        filter: drop-shadow(0 0 20px #1f004f);
+        color: #ffffff;
+        padding-top: 15px;
+    }
+}
+.add_border{
+    border: 1px solid #fcb100;
+}
+.accordion .add_border:not(:first-of-type):not(:last-of-type){
+    border-bottom: 1px solid #fcb100;
+}
+.accordion .card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+
+/*==================================================================
+                    page heading box
+====================================================================*/
+.banner_home_all_box {
+    position: absolute;
+    top: 130%;
+    width: 100%;
+    left: 0;
+    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%);
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0 96%);
+
+
+    .banner_home_box {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(55deg, rgba(2, 0, 36, 1) 0%, rgba(158, 78, 252, 1) 0%, rgba(87, 13, 200, 1) 85%, rgba(87, 13, 200, 1) 100%);
+        -webkit-box-shadow: 0px 6px 0px 0px #7220ec; 
+        box-shadow: 0px 6px 0px 0px #7220ec;
+
+        .banner_home_box_cont {
+            padding: 30px 40px;
+            -webkit-box-shadow: 12px 28px 50px 10px rgba(31, 7, 67, 1);
+            -moz-box-shadow: 12px 28px 50px 10px rgba(31, 7, 67, 1);
+            box-shadow: 12px 28px 50px 10px rgba(31, 7, 67, 1);
+            
+
+            h1 {
+                font-family: $font_anton;
+                font-size: 50px;
+                background: linear-gradient(to top, #fdb125 0%, #e07e1e 48%, #fcb100 52%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #4d0148;
+                filter: drop-shadow(0px 4px 0px rgba(17, 0, 16, 0.4));
+                color: #fcb100;
+                padding-bottom: 20px;
+            }
+
+            h2 {
+                color: #ffffff;
+                font-family: $font_anton;
+                font-size: 32px;
+                filter: drop-shadow(0px 4px 0px rgba(17, 0, 16, 0.4));
+                padding-bottom: 15px;
+            }
+
+            p {
+                color: #ffffff;
+                font-family: $font_nunito;
+                font-size: 16px;
+            }
+        }
+    }
+}
+/*========================================================
+                games img overlay
+==========================================================*/
+.games_pic_box_overlay{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #150035c2;
+    opacity: 0;
+    @include tran;
+
+    .games_overlay_con{
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-top: 50%;
+        transform: translateY(-50%);
+
+        h2{
+            color: white;
+            font-family: $font_anton;
+            font-size: 24px;
+            padding-bottom: 50px;
+        }
+    }
+}

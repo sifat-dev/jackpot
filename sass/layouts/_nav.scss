@@ -1,0 +1,43 @@
+nav {
+
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    a {
+        img {
+            height: 98px;
+        }
+    }
+
+    ul{
+        li{
+            a{
+                font-family: $font_nunito;
+                font-weight: 600;
+                color: white;
+                font-size: 20px;
+                line-height: 70px;
+                @include tran;
+                padding: 0 15px!important;
+
+                &:hover{
+                    color: $color_pink;
+                }
+            }
+
+            &.active{
+                a{
+                    color: $color_pink;
+                }
+            }
+        }
+
+        .nav_button{
+            margin-top: 10px;
+            margin-left: 45px;
+        }
+    }
+}

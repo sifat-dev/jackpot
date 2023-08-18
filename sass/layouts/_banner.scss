@@ -1,0 +1,51 @@
+#full_banner_home_page {
+    padding: 250px 0 285px 0;
+    position: relative;
+    background-color: #150035;
+
+
+    .main_banner_part {
+        position: relative
+    }
+
+    .main_banner_home_page {
+        .home_banner_img {
+            img {
+                position: absolute;
+                top: 50%;
+                left: -40px;
+                transform: translateY(-50%);
+                height: 600px;
+            }
+        }
+
+        .banner_home_content {
+            p {
+                color: #ffffff;
+                font-family: $font_nunito;
+                font-size: 20px;
+
+                &.second_p_banner {
+                    text-align: center;
+                    margin-top: -20px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            h1 {
+                font-family: $font_anton;
+                font-size: 331px;
+                background: linear-gradient(to top, #fdb125 0%, #e07e1e 48%, #fcb100 52%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #4d0148;
+                filter: drop-shadow(0 0 35px #4d0148);
+                color: #fcb100;
+                margin-top: -35px;
+            }
+        }
+    }
+
+
+}
